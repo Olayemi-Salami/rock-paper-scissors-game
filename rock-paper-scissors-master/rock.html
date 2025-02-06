@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: url(images/16403f8a-aef4-4cbb-a793-ef1560a577ad.jpg) no-repeat center center/cover;
+            color: white;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .container {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 400px;
+        }
+
+        h1 {
+            font-size: 2em;
+        }
+
+        p {
+            font-size: 1.2em;
+        }
+
+        .buttons {
+            margin-top: 20px;
+        }
+
+        button {
+            background: #ff9800;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 10px;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #e68900;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hi, There!!!</h1>
+        <p>Would you love to play a Rock Paper Game?</p>
+        <div class="buttons">
+            <button id="neverMind">Never Mind</button>
+            <button id="yesButton">Yes</button>
+            
+        </div>
+    </div>
+    <script>
+        document.getElementById("neverMind").addEventListener("click", function() {
+            alert("Maybe next time!");
+        });
+        document.getElementById("yesButton").addEventListener("click", function() {
+            alert("Let's Play!");
+            window.location.href = "index.html";
+        });
+       
+    </script>
+</body>
+</html>

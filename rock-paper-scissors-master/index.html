@@ -14,7 +14,8 @@
   </head>
   <body>
 
-    <div class="game-section">
+    
+     <div class="game-section">
       <div class="top-section">
         <img class="logo" src="./images/logo.svg" atl="logo" />
 
@@ -23,7 +24,7 @@
           <p id="score-value"></p>
         </div>
       </div>
-      
+
       <div id="triangle">
         <div id="rock" class="circle small rock">
           <div class="symbol"></div>
@@ -71,8 +72,20 @@
     </div>
 
     <div id="reset-button" class="button"><p class="button-text">reset</p></div>
+    <div id="home-page" class="button"><p class="button-text">HomePage</p></div>
+
+    <div class="footer">
+      <p class="attribution"> Coded by <a target="_blank">Michelle </a>.</p>
+    </div>
 
     <script src="scripts/game.js"></script>
+
+    <script>
+
+      document.getElementById("home-page").addEventListener("click", function() {
+  window.location.href = "rock.html";
+});
+    </script>
      
   </body>
-</html>
+</html> 
